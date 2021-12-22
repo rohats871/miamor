@@ -22,7 +22,7 @@ class _ScreenThreeState extends State<ScreenThree> {
         elevation: 0,
         title: const Text(
           "TE QUIERO",
-          style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
       body: SafeArea(
@@ -33,27 +33,55 @@ class _ScreenThreeState extends State<ScreenThree> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Text(
-                  "Cada Momento Yo Penso Sobre tu :",
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900),
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(5),
+                      border: Border.all(color: Colors.black, width: 2)),
+                  child: const Padding(
+                    padding: EdgeInsets.all(5.0),
+                    child: Text(
+                      "Cada Momento Yo Penso Sobre tu :",
+                      style: TextStyle(fontWeight: FontWeight.w900),
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 20),
-                const Text(
-                  "I wish to have a family with you see you everyday and complete my life",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.black, width: 2)),
+                  child: const Padding(
+                    padding: EdgeInsets.all(5.0),
+                    child: Text(
+                      "I wish to have a family with you see you everyday and complete my life",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontWeight: FontWeight.w700),
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 20),
-                const Text(
-                  "You make me the happiest every time i see you, the way you laugh, they way you smile, if there is one thing i want in this life is you <3",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.black, width: 2)),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text(
+                      "You make me the happiest every time i see you, the way you laugh, they way you smile, if there is one thing i want in this life is you <3",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontWeight: FontWeight.w700),
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 20),
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(10)),
                         border: Border.all(color: Colors.red, width: 4)),
                     child: Image.asset(
                       "images/sexy.jpg",
@@ -61,16 +89,14 @@ class _ScreenThreeState extends State<ScreenThree> {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
-                  height: 50,
                   width: double.infinity,
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(color: Colors.black, width: 2)),
                   child: MaterialButton(
-                    height: 45,
                     // splashColor: Color(0XFFeac4d5),
                     splashColor: Colors.yellow,
                     onPressed: () {
@@ -80,9 +106,7 @@ class _ScreenThreeState extends State<ScreenThree> {
                     child: const Text(
                       "LETS GO! BABY (HARDER)",
                       style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18),
+                          color: Colors.black, fontWeight: FontWeight.bold),
                     ),
                   ),
                 )

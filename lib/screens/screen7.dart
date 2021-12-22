@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
-import 'package:miamor/screens/screen6.dart';
+import 'package:miamor/screens/screen8.dart';
 
-class ScreenFive extends StatefulWidget {
-  const ScreenFive({Key? key}) : super(key: key);
+class Screenseven extends StatefulWidget {
+  const Screenseven({Key? key}) : super(key: key);
 
   @override
-  _ScreenFiveState createState() => _ScreenFiveState();
+  _ScreensevenState createState() => _ScreensevenState();
 }
 
-class _ScreenFiveState extends State<ScreenFive> {
+class _ScreensevenState extends State<Screenseven> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,10 +21,10 @@ class _ScreenFiveState extends State<ScreenFive> {
         backgroundColor: Colors.black,
         elevation: 0,
         title: const Text(
-          "TU ME COMPLETO",
+          "MI CORAZON <3 TE BUSCANDO",
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: Colors.blueGrey,
+            color: Colors.yellowAccent,
           ),
         ),
       ),
@@ -37,44 +37,45 @@ class _ScreenFiveState extends State<ScreenFive> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Expanded(
+                  child: const Text(
+                    "Yo quiero decir, cada vez mi corazon tu buscando, quiero siempre verte , pq tu me dar un son rie muy bonita muy importa :)",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w900,
+                      color: Colors.blueGrey,
+                    ),
+                  ),
+                ),
+                Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Colors.black,
                         borderRadius: BorderRadius.circular(10),
-                        border:
-                            Border.all(color: Colors.greenAccent, width: 2)),
+                        border: Border.all(color: Colors.yellow, width: 1.5)),
                     child: Center(
-                      child: Text(
-                        "Eres indigo de mi vida por que ya te ganaste, quiero bailar, jugar, cantar",
+                      child: const Text(
+                        "POR QUE LLEGA A MI VIDA, EL AMOR DE MI VIDA, YO SE LO PEDI AL DE ARRIBA,PERO CONTIGO SE LE FUE LA MANO,Y QUE BUENA SUERTE,LA MIA,GANE SIN JUGAR LA LOTERIA, LA FALTA QUE , ME HACIA,CONTIGO UNA VIDE LLEGO TEMPRANO",
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black,
-                        ),
+                            fontWeight: FontWeight.w700,
+                            color: Colors.yellowAccent),
                       ),
                     ),
                   ),
                 ),
-                const SizedBox(height: 20),
-                const Expanded(
-                  child: Text(
-                    "YO TE VEO TODOS LOS DIAS, Y ESPERO POR TI, POR QUE YO QUIERO QUE HABLAR CONTIGO, TU ERES MI PRIZE MY TROPHY MY NUMERO ONE",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontWeight: FontWeight.w700, color: Colors.blueGrey),
-                  ),
+                SizedBox(
+                  height: 10,
                 ),
-                const SizedBox(height: 20),
                 Expanded(
-                  flex: 3,
+                  flex: 2,
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius:
                             const BorderRadius.all(Radius.circular(10)),
                         border:
-                            Border.all(color: Colors.greenAccent, width: 4)),
+                            Border.all(color: Colors.yellowAccent, width: 4)),
                     child: Image.asset(
-                      "images/lovemessage.jpg",
+                      "images/sleepy.jpg",
                       filterQuality: FilterQuality.low,
                     ),
                   ),
@@ -85,12 +86,12 @@ class _ScreenFiveState extends State<ScreenFive> {
                   decoration: BoxDecoration(
                       color: Colors.blueGrey,
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.greenAccent, width: 2)),
+                      border: Border.all(color: Colors.yellowAccent, width: 2)),
                   child: MaterialButton(
                     // splashColor: Color(0XFFeac4d5),
-                    splashColor: Colors.greenAccent,
+                    splashColor: Colors.black,
                     onPressed: () {
-                      Get.to(const Screen6());
+                      Get.to(const Screen8());
                     },
                     elevation: 0,
                     child: const Text(

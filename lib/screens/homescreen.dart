@@ -24,22 +24,23 @@ class _HomeScreenState extends State<HomeScreen> {
                 const EdgeInsets.only(left: 24, right: 24, top: 20, bottom: 10),
             child: Column(
               children: [
-                Container(
-                  height: 80,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      border: Border.all(color: Colors.black, width: 2)),
-                  child: const Center(
-                    child: Text(
-                      "Hola Amor Mio Como estas? \nHoy es un Dia Muy importa  ",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: 22,
-                          color: Colors.black,
-                          fontFamily: 'PoiretOne',
-                          fontWeight: FontWeight.w700),
+                Expanded(
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(10)),
+                        border: Border.all(color: Colors.black, width: 2)),
+                    child: const Center(
+                      child: Text(
+                        "Hola Amor Mio Como estas? \nHoy es un Dia Muy importa  ",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: 'PoiretOne',
+                            fontWeight: FontWeight.w700),
+                      ),
                     ),
                   ),
                 ),
@@ -48,60 +49,63 @@ class _HomeScreenState extends State<HomeScreen> {
                   "Tu sabes cuantas mensajes, yo escribe por ti?\n lets Calculate",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                      fontSize: 20,
                       color: Colors.white,
                       fontFamily: 'PoiretOne',
                       fontWeight: FontWeight.w700),
                 ),
                 const SizedBox(height: 10),
-                Container(
-                  height: 65,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      border: Border.all(color: Colors.black, width: 2)),
-                  child: const Center(
-                    child: Text(
-                      "So yo Escribo como '16' carteras pro ti",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: 25,
-                          color: Colors.black,
-                          fontFamily: 'PoiretOne',
-                          fontWeight: FontWeight.bold),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(10)),
+                        border: Border.all(color: Colors.black, width: 2)),
+                    child: const Center(
+                      child: Text(
+                        "So yo Escribo como '16' carteras pro ti",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: 'PoiretOne',
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                 ),
                 const SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      border: Border.all(color: Colors.white, width: 4)),
-                  child: Image.asset(
-                    "images/renacollage.jpg",
-                    fit: BoxFit.cover,
+                Expanded(
+                  flex: 4,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(10)),
+                        border: Border.all(color: Colors.white, width: 4)),
+                    child: Image.asset(
+                      "images/renacollage.jpg",
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
                 const SizedBox(height: 10),
-                const Text(
-                  "Y creo que no es mas, por que por ti si yo excribo un libro es tambien solo un mensaje",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.white,
-                      fontFamily: 'PoiretOne',
-                      fontWeight: FontWeight.bold),
+                Expanded(
+                  child: const Text(
+                    "Y creo que no es mas, por que por ti si yo excribo un libro es tambien solo un mensaje",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'PoiretOne',
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
                 const SizedBox(height: 10),
                 Container(
-                  height: 50,
                   width: double.infinity,
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(color: Colors.black, width: 2)),
                   child: MaterialButton(
-                    height: 45,
                     // splashColor: Color(0XFFeac4d5),
                     splashColor: Colors.orangeAccent,
                     onPressed: () {

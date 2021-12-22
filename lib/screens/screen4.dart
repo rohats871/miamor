@@ -44,11 +44,18 @@ class _ScreenFourState extends State<ScreenFour> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const Expanded(
-                  child: Text(
-                    "YO TE VEO TODOS LOS DIAS, Y ESPERO POR TI, POR QUE YO QUIERO QUE HABLAR CONTIGO, TU ERES MI PRIZE MY TROPHY MY NUMERO ONE",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black, width: 2)),
+                    child: const Text(
+                      "YO TE VEO TODOS LOS DIAS, Y ESPERO POR TI, POR QUE YO QUIERO QUE HABLAR CONTIGO, TU ERES MI PRIZE MY TROPHY MY NUMERO ONE",
+                      textAlign: TextAlign.center,
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
+                    ),
                   ),
                 ),
                 const SizedBox(height: 20),
